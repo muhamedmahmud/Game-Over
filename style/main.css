@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Nerko+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap");
+/* :root {
+  --bg-main-color: #272b30;
+  --text-color:white;
+  --second-color:#3D4145;
+  --hover-link-color:blue;
+} */
+[data-theme="dark"] {
+  --bg-main-color: #31363f;
+  --seconde-color: #31363f;
+  --text-color: #bbbbbb;
+  --bs-body-bg: #000;
+  --hover-link-color: blue;
+  --links: blue;
+  --btn-active-color: #f5f5f5;
+
+}
+
+
+
+[data-theme="light"] {
+  --bg-main-color: #f5f5f5;
+  --seconde-color: #f8ede3;
+  --text-color: #8d493a;
+  --hover-link-color: #09c;
+  --bs-body-bg: #dfd3c3;
+  --btn-active-color: #8d493a;
+}
+a {
+  color: var(--links);  
+}
+#e {
+  color: var(--btn-active-color) !important;
+}
+#s{
+  border: 0 !important;
+  --bs-navbar-toggler-focus-width: 0;
+  color: gray;
+}
+.fa-bars, .fa-xmark {
+  transition: all 5s;
+}
+
+* {
+  font-family: nerko;
+  font-weight: 300;
+  box-sizing: border-box;
+  transition: background-color 0.5s ease;
+
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+.landing-page {
+  background-color: var(--bg-main-color);
+  height: 100vh;
+  color: var(--text-color);
+}
+.image {
+  background-image: url(../assets/images/login.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.bg-second {
+  background-color: var(--second-color);
+}
+.inp {
+  background-color: var(--bg-main-color);
+  color: var(--text-color) !important;
+}
+.inp::placeholder {
+  color: var(--text-color) !important;
+}
+.inp:focus {
+  background-color: var(--bg-main-color);
+}
+.btn {
+  --bs-btn-bg: var(--bg-main-color);
+  --bs-btn-color: var(--text-color);
+  --bs-btn-border-color: var(--text-color);
+  --bs-btn-hover-color: var(--text-color);
+  --bs-btn-hover-bg: var(--bg-main-color);
+  --bs-btn-hover-border-color: var(--bg-main-color);
+  --bs-btn-active-bg: var(--bg-main-color);
+  --bs-btn-active-border-color: var(--text-color);
+}
+.reg-img {
+  background-image: url(../assets/images/register.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.home {
+  color: var(--text-color);
+  background-color: var(--bg-main-color);
+}
+.ul-links .link .active {
+  color: blue;
+}
+.log-out:hover {
+  color: var(--hover-link-color);
+}
+.items .card {
+  --bs-card-title-color: var(--text-color);
+  --bs-card-color: var(--text-color);
+  transition: all 0.5s;
+  min-height: 440px;
+}
+
+.nav-item .nav-link.active,
+.nav-item .nav-link:hover {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--seconde-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 50px;
+  box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+.card:hover {
+  transform: scale(105%);
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  border: 3px solid;
+  border-color: #fff #fff transparent transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px solid;
+  border-color: transparent transparent #ff3d00 #ff3d00;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 0.5s linear infinite;
+  transform-origin: center center;
+}
+.loader::before {
+  width: 32px;
+  height: 32px;
+  border-color: #fff #fff transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.loading {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+}
