@@ -63,7 +63,7 @@ async function registerForm(userData) {
 
   const response = await api.json();
   if(response.message==='success'){
-    location.href='../index.html'
+    location.href='index.html'
   }else{
     document.getElementById('msg').innerHTML=response.message
     }
