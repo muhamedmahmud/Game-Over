@@ -1,14 +1,14 @@
 const mode = document.getElementById("mode");
 if (localStorage.getItem("theme") != null) {
-  const themeData = localStorage.getItem("theme"); // light Or dark
+  const themeData = localStorage.getItem("theme"); //    Or dark
 
-  if (themeData === "light") {
+  if (themeData === " ") {
     mode.classList.replace("fa-sun", "fa-moon"); // sun to moon
   } else {
     mode.classList.replace("fa-moon", "fa-sun"); // moon to sun
   }
 
-  document.querySelector("html").setAttribute("data-theme", themeData); // light Or dark
+  document.querySelector("html").setAttribute("data-theme", themeData); //   Or dark
 }
 document.querySelectorAll(".menu a").forEach(function (link) {
   link.addEventListener("click", function () {
@@ -111,10 +111,10 @@ function showDetails(id) {
 }
 mode.addEventListener("click", function (e) {
   if (mode.classList.contains("fa-sun")) {
-    document.querySelector("html").setAttribute("data-theme", "light");
+    document.querySelector("html").setAttribute("data-theme", " ");
     mode.classList.replace("fa-sun", "fa-moon"); // change icon -->moon
 
-    localStorage.setItem("theme", "light");
+    localStorage.setItem("theme", " ");
   } else {
     mode.classList.replace("fa-moon", "fa-sun"); //change icon -->sun
     document.querySelector("html").setAttribute("data-theme", "dark");
