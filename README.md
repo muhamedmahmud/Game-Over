@@ -1,6 +1,6 @@
 # 🎮 Game Over
 
-A simple and fun web game built with **HTML**, **CSS**, and **JavaScript**, designed to provide an interactive gaming experience with fast-paced challenges.
+A simple and fun web game built with **HTML**, **CSS**, **Bootstrap**, and **JavaScript**, designed to provide an interactive gaming experience with fast-paced challenges.
 
 ---
 
@@ -16,18 +16,19 @@ A simple and fun web game built with **HTML**, **CSS**, and **JavaScript**, desi
 - 🎯 Easy and intuitive controls  
 - 🕹️ Increasing difficulty challenges  
 - 💻 Compatible with all modern browsers  
-- 📱 Responsive design for all devices  
+- 📱 Responsive design using **Bootstrap 5**  
 - 🔊 Sound and visual effects for better engagement  
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology      | Description                    |
-|-----------------|-------------------------------|
-| HTML            | Basic page structure           |
-| CSS             | Styling and user interface     |
-| JavaScript      | Game logic and interactivity   |
+| Technology        | Description                          |
+|-------------------|--------------------------------------|
+| HTML              | Basic page structure                 |
+| CSS               | Custom styling                       |
+| Bootstrap 5.3     | Responsive layout and UI components  |
+| JavaScript        | Game logic and interactivity         |
 
 ---
 
@@ -35,9 +36,9 @@ A simple and fun web game built with **HTML**, **CSS**, and **JavaScript**, desi
 
 ```bash
 ├── index.html
-├── css/
+├── style/
 │   └── style.css
 ├── js/
 │   └── main.js
-└── assets/
-    └── sounds/
+├── assets/
+│   └── sounds/
